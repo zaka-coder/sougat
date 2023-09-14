@@ -1,0 +1,130 @@
+.bgController{
+    background-color: #E8E8E8 !important;
+}
+.diInputs input:focus {
+    outline: none;
+    
+}
+.diInputs{
+    display: flex;
+    gap: 100px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9999;
+}
+@media(max-width:992px){
+    .diInputs{
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+.countryInput {
+    width: 320px !important;
+    height: 45px !important;
+    border-radius: 9px;
+    background: #ffffff;
+    border: 0;
+    padding-left: 25px;
+    position: relative;
+}
+
+.cityInput {
+    width: 320px !important;
+    height: 45px !important;
+    border-radius: 9px;
+    background: #ffffff;
+    border: 0;
+    padding-left: 25px;
+    position: relative;
+}
+.countryAncestor{
+    position: relative!important;
+}
+.country {
+    position: absolute;
+    z-index: 9999;
+    left: 5px;
+    top: 10px;
+}
+.cityAncestor{
+    position: relative!important;
+}
+.city {
+    position: absolute;
+    z-index: 9999;
+    left: 5px;
+    top: 10px;
+}
+
+.textOfHolidays h2{
+    color: black !important;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: inherit;
+    font-family: 'GT Eesti Pro Display', Arial, sans-serif !important;
+}
+.textOfHolidays span{
+    font-size: 14px;
+    font-weight: 450;
+    color: #707070;
+}
+.imagesCollection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.holidays-card {
+    height: 300px;
+    width: 280px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+.holidays-head img{
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    transition: all ease 1s;
+}
+.holidays-head img:hover {
+    scale: 1.2;
+}
+/* dewali starts here */
+.holidays-card-dewali{
+    height: 300px;
+    width: 280px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+.holidays-head-dewali img{
+    width: 100%;
+    height: 150px;
+    max-width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    transition: all ease 1s;
+}
+.holidays-body-dewali{
+    text-align: center;
+    height: 150px;
+    background-color:white;
+}
+.bottomMost-dewali{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding-top:75px !important;
+}
+.bottomMost-dewali button{
+    border:1px solid red;
+    border-radius: 5px;
+    color: red;
+    background-color: transparent;
+}

@@ -1,0 +1,617 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+/* Reset default styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+@media(min-width:576px) {
+    .container {
+        max-width: 730px !important;
+    }
+}
+
+@media(min-width:768px) {
+    .container {
+        max-width: 768px !important;
+    }
+}
+
+@media(min-width:830px) {
+    .container {
+        max-width: 830px !important;
+    }
+}
+
+@media(min-width:992px) {
+    .container {
+        max-width: 992px !important;
+    }
+}
+
+@media(min-width:1200px) {
+    .container {
+        max-width: 1220px !important;
+    }
+}
+
+/* Navbar styles */
+@media(max-width:992px) {
+    .navbar {
+        --bs-navbar-padding-y: 0 !important;
+    }
+}
+
+/* Logo styles */
+.logo img {
+    max-height: 80px;
+    object-fit: contain;
+    margin-left: 10px;
+}
+
+@media (max-width:768px) {
+    .logo img {
+        width: 100px;
+        height: 60px;
+    }
+}
+
+/* Navbar toggler styles */
+nav .navbar-toggler {
+    box-shadow: none !important;
+    margin-right: 10px;
+    float: end;
+}
+
+/* Menu styles */
+.menu ul li a {
+    font-weight: 500;
+    font-size: 14px;
+    color: black;
+}
+
+@media (max-width: 992px) {
+    .beFinished {
+        display: none;
+    }
+}
+
+.beFinished a {
+    gap: 25px;
+}
+
+.beFinished .vr {
+    height: 30px;
+    width: 2px;
+    margin-top: 8px;
+}
+
+.userLogo a {
+    display: flex;
+    align-items: center;
+}
+
+/* Cart styles */
+.cart {
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin-top: 10px;
+}
+
+.cart .count {
+    position: absolute;
+    top: -11px;
+    right: -5px;
+    z-index: 2;
+    font-size: 11px;
+    border-radius: 50%;
+    background: #d60b28;
+    width: 14px;
+    height: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+/* Navbar navigation styles */
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    z-index: 99;
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        align-items: start !important;
+        background-color: #FFFFFF;
+        position: absolute;
+        width: 100%;
+        z-index: 99999;
+    }
+
+    @media(max-width:500px) {
+        .navbar-nav {
+            width: 100% !important;
+        }
+    }
+
+    .navbar-nav li {
+        padding-left: 10px;
+    }
+}
+
+/* Carousel styles */
+.firstSlider {
+    position: relative;
+}
+
+.firstSlider img {
+    width: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+@media (max-width:768px) {
+    .firstSlider img {
+        height: 160px;
+        max-width: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 480px) {
+    .firstSlider img {
+        height: 140px;
+        max-width: 100%;
+        object-fit: fill;
+    }
+}
+
+.carousalAncestor {
+    position: relative;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 30%;
+    right: 5%;
+    z-index: 99;
+}
+
+@media(max-width:992px) {
+    .buttons {
+        display: none;
+    }
+}
+
+.buttons button {
+    border: none;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+/* Location input styles */
+.wrapperLocation {
+    z-index: 2;
+    position: absolute;
+    top: 32%;
+    left: 30%;
+}
+
+@media (max-width:992px) {
+    .wrapperLocation {
+        top: 75%;
+        left: 5%;
+    }
+}
+
+@media (max-width:480px) {
+    .wrapperLocation {
+        top: 72%;
+        left: 5%;
+    }
+}
+
+.location input::placeholder {
+    font-size: 14px;
+}
+
+.location input {
+    width: 498px;
+    height: 43px;
+    border-radius: 9px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 5px 0px gray;
+    border: 0;
+    padding-left: 30px;
+}
+
+@media (max-width:992px) {
+    .location input {
+        width: 90vw;
+    }
+}
+
+@media (max-width:480px) {
+    .location input {
+        width: 90vw;
+    }
+}
+
+.location input:focus {
+    outline: none;
+}
+
+.location {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+@media(max-width:992px) {
+    .location {
+        display: none;
+    }
+}
+
+.location i {
+    position: absolute;
+    top: 30%;
+    left: 10px;
+    color: gray;
+}
+
+/* locationsDetails styles */
+.locationsDetails {
+    width: 500px;
+    height: 140px;
+    background-color: #ffffff;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 9px;
+    visibility: hidden;
+}
+
+@media(max-width:992px) {
+    .locationsDetails {
+        display: none;
+    }
+}
+
+.locationsDetails .city {
+    width: 100px;
+    height: 90px;
+    font-size: 13px;
+    color: black;
+    font-weight: 350;
+}
+
+.locationsDetails .city img {
+    border-radius: 9px;
+    max-width: 100%;
+    height: 70px;
+}
+
+/* second location styles */
+@media(min-width:992px) {
+    .secondLocation {
+        display: none;
+    }
+}
+
+@media(max-width:992px) {
+    .secondLocation {
+        display: block;
+    }
+}
+
+.offcanvas.offcanvas-bottom {
+    height: 450px !important;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.offcanvas-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.citySecond img {
+    border-radius: 9px;
+}
+
+/* tetraButtons styles */
+.tetraButtons {
+    width: fit-content;
+    position: absolute;
+    top: -20px;
+    left: 30%;
+    z-index: 9;
+}
+
+@media(max-width:992px) {
+    .tetraButtons {
+        display: none;
+    }
+}
+
+.tetraButtons a {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    text-align: center;
+    line-height: 40px;
+    width: 125px;
+    font-weight: 400;
+    height: 40px;
+    border-radius: 8px;
+    background-color: rgba(255, 138, 128, 1);
+}
+
+.tetraButtons a.active {
+    background-color: red !important;
+    color: white;
+}
+
+/* second slide styles */
+.secondCarousalAncestor {
+    background-color: #E8E8E8 !important;
+}
+
+.secondSlider .card {
+    border: none !important;
+    margin-bottom: 10px;
+    width: 230px;
+    overflow: hidden;
+    border-radius: 20px !important;
+}
+
+@media(max-width:490px) {
+    .secondSlider .card {
+        margin-left: 25px;
+        width: 80vw;
+    }
+}
+
+.card-head img {
+    width: 100%;
+    height: 150px;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    background-color: white;
+    transition: all ease 0.5s;
+}
+
+.card-body:hover {
+    background-color: #d7715c !important;
+    color: white;
+}
+
+.card-body h5 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-weight: 800;
+    line-height: 1.1;
+    color: inherit;
+}
+
+.bottomMost {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 35px !important;
+}
+
+.bottomMost h6 {
+    font-weight: 700;
+}
+
+.review {
+    font-size: 11px;
+}
+
+.stars small {
+    font-size: 10px;
+}
+
+.controllers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -40px;
+    padding-top: 49px;
+    margin-bottom: 15px;
+}
+
+.controllers h2 {
+    color: black !important;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: inherit;
+    font-family: 'GT Eesti Pro Display', Arial, sans-serif !important;
+}
+
+.controllers span {
+    font-size: 14px;
+    font-weight: 450;
+    color: #707070;
+    line-height: 20px;
+}
+
+.buttons-second {
+    margin-right: 60px !important;
+}
+
+@media(max-width:992px) {
+    .buttons-second {
+        display: none;
+    }
+}
+
+.buttons-second button {
+    border: none;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+/* top cities styles */
+.thirdCarousalAncestor {
+    background-color: #E8E8E8 !important;
+}
+
+.second-card {
+    height: 300px;
+    width: 280px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+@media(min-width:491px)and(max-width:601px) {
+    .centeralized {
+        margin-left: 90px !important;
+    }
+}
+
+@media(max-width:490px) {
+    .second-card {
+        margin-left: 25px;
+        width: 80vw;
+    }
+}
+
+.second-card-head img {
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    transition: all ease 1s;
+}
+
+.second-card-head img:hover {
+    scale: 1.2;
+}
+
+.cityName {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.cityName h3 {
+    margin-left: 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700px;
+    line-height: 1.1;
+    padding: 3px;
+    width: fit-content;
+    border-radius: 9px;
+}
+
+footer {
+    background-color: #FEF7F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@media(max-width:600px) {
+    footer {
+        display: none;
+    }
+}
+
+.footernav a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    transition: all ease 0.3s;
+    margin-right: 15px;
+}
+
+.footernav a:hover {
+    color: #ee0505 !important;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icons i {
+    font-size: 35px;
+    color: #f20808;
+}
+
+.hr {
+    height: 2px;
+    width: 100%;
+}
+
+/* bottomBar styles */
+.bottomBar {
+    width: 100vw;
+    height: 50px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    z-index: 99999;
+}
+
+.bottomBar table {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+td a {
+    text-decoration: none;
+    color: black;
+}
+
+@media(min-width:992px) {
+    .bottomBar {
+        display: none;
+    }
+}
+
+@media(max-width:992px) {
+    .bottomBar {
+        display: block;
+    }
+}
